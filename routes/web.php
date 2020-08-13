@@ -15,12 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('fronts.posts.index')
+    ->middleware('verified');
 });
 
 Route::name('blogs_path')->get('/blogs', 'Blogscontroller@index')->middleware('auth');
 
-Route::name('blogs_path_index1')->get('/blogs/index1', 'Blogscontroller@index1');
+Route::name('blogs_path_index1')->get('/', 'Blogscontroller@index1');
 
 Route::name('create_blogs_path')->get('/blogs/create', 'Blogscontroller@create')->middleware('auth');
 
@@ -59,7 +60,9 @@ Route::name('subscribe.store')->post('/subscribe', 'SubscribeController@store');
 
 //route::resource('blogs','Blogscontroller');
 Auth::routes([
-    'register' => false,
+    /*'register' => true,
+    'verify' => true,*/
 ]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+

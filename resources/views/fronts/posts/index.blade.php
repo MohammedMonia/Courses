@@ -9,8 +9,8 @@
     <div class="main-wrapper">
 	    <section class="cta-section theme-bg-light py-5">
 		    <div class="container text-center">
-			    <h2 class="heading">Welcome to my blog, I hope to you best time</h2>
-			    <div class="intro">Subscribe and get my latest blog post in your inbox.</div>
+			    <h2 class="heading">Welcome To<a href="#" style="text-decoration-line: none;"> Courses Profile</a>, I Hope To You Best Time</h2>
+			    <div class="intro">Subscribe and get notification of my latest courses in your inbox.</div>
 			    <form action="{{ route('subscribe.store' ) }}" method="POST" class="signup-form form-inline justify-content-center pt-3">
 				@csrf                                  
                     <div class="form-group">                  
@@ -49,7 +49,7 @@
 			    
 			    
 			    <nav class="blog-nav nav nav-justified my-5">
-					{{ $blogs->links() }}	
+				{{ $blogs->links() }}	
 				</nav>
 				
 		    </div>

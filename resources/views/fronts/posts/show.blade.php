@@ -38,7 +38,7 @@
 				<div class="profile-section pt-3 pt-lg-0">
 				    <img class="profile-image mb-3 rounded-circle mx-auto" src="/assets/images/me.png" alt="image" >			
 					
-					<div class="bio mb-3">My name is Mohamed Monia. I love coding very much, and I am a proficient developer in web programming.<br><a href="{{ route('about.index') }}">Find out more about me</a></div><!--//bio-->
+            <div class="bio mb-3">Website is a platform that works to provide many distinct services that make it easy for subscribers...<br><a href="{{ route('about.front.index') }}">Find out more about</a></div><!--//bio-->
 					<ul class="social-list list-inline py-3 mx-auto">
 			            <li class="list-inline-item"><a href="https://twitter.com/MohamedMonia3"><i class="fab fa-twitter fa-fw"></i></a></li>
 			            <li class="list-inline-item"><a href="https://www.linkedin.com/in/mohamed-monia-b126ab154"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
@@ -51,7 +51,7 @@
 				
 				<ul class="navbar-nav flex-column text-left">
                 <li class="nav-item active">
-					    <a class="nav-link" href="{{ route('blogs_path_index1') }}"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
+					    <a class="nav-link" href="{{ route('blogs_path_index1') }}"><i class="fas fa-home fa-fw mr-2"></i> Home <span class="sr-only">(current)</span></a>
 					</li>
 					
 					<li class="nav-item">
@@ -96,7 +96,7 @@
                     
                     </form>
                     
-                    <h5 class="mt-2 mb-2">Comments :</h5>
+                    <h5 class="mt-2 mb-2"><a style="text-decoration-style: none;" href="#"> Comments :</a></h5>
                     <div class="cc">
                         @foreach($blog->comments as $comment)
                         <div class="meta mb-3"> 
@@ -192,7 +192,7 @@
 
 <!-- Copyright -->
 <div class="footer-copyright text-center py-3">© 2020 Copyright:
-  <a href="https://mdbootstrap.com/">Mohamed Monia</a>
+  <a href="https://github.com/MohammedMonia">Mohamed Monia Company</a>
 </div>
 <!-- Copyright -->
 

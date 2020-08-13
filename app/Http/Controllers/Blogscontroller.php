@@ -28,7 +28,7 @@ class Blogscontroller extends Controller
 
     public function index1()
     {
-        $blogs = Blog::orderBy('created_at' , 'desc')->paginate();
+        $blogs = Blog::orderBy('created_at' , 'desc')->paginate(3);
 
         // $blogs = Blog::all();
 

@@ -65,8 +65,8 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Blog Catalog:</h6>
-            <a class="collapse-item" href="{{ route('blogs_path') }}">Posts</a>
+            <h6 class="collapse-header">Website Catalog:</h6>
+            <a class="collapse-item" href="{{ route('blogs_path') }}">Courses</a>
             <a class="collapse-item" href="{{ route('comments.index1') }}">Comments</a>
             <a class="collapse-item" href="{{ route('about.index') }}">About</a>
             <a class="collapse-item" href="{{ route('subscribe.index') }}">Subscribe</a>

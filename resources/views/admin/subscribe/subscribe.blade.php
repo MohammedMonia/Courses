@@ -32,13 +32,16 @@
           <form method="post" action="{{ route('subscribe.destroy', [$subscribe->id]) }}">
             @method('delete')
             @csrf
-            <button type="submit" class="btn btn-outline-danger btn-sm delete">Delete</button>
+            <button type="submit" class="btn btn btn-outline-danger btn-sm delete"><i class="fa fa-trash"></i></button>
           </form>
         </div>
       </td>
     </tr>
+
+    
     @endforeach
+    
   </tbody>
 </table>
-
+<h6> Total Subscribes: <span style="font-size: larger;">{{ $subscribe->count() }}</span> </h6>
 @endsection

@@ -7,7 +7,7 @@
 @include('admin._alert')
 
 <div class="d-flex">
-  <h1 class="h3 mb-4 text-gray-800">Posts</h1>
+  <h1 class="h3 mb-4 text-gray-800">Post of courses</h1>
   <div class="ml-auto">
     <a href="{{ route('create_blogs_path') }}" class="btn btn-sm btn-outline-success">Create new</a>
   </div>
@@ -27,6 +27,7 @@
     </tr>
   </thead>
   <tbody>
+  
     @foreach ($blogs as $blog)
     <tr>
       <td><img height="60" src="{{ $blog->image }}"></td>
@@ -41,7 +42,7 @@
           <form method="post" action="{{ route('delete_blogs_path', [$blog->id]) }}">
             @method('delete')
             @csrf
-            <button type="submit" class="btn btn-outline-danger btn-sm delete">Delete</button>
+            <button type="submit" class="btn btn btn-outline-danger btn-sm delete"><i class="fa fa-trash"></i></button>
           </form>
         </div>
       </td>
@@ -51,5 +52,7 @@
 </table>
 
 {{ $blogs->links() }}
+<p> Total number of Post courses: <span style="font-size: larger;"> {{ $blog->count() }}</span> </p>
+
 
 @endsection

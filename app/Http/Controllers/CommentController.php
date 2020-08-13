@@ -51,8 +51,6 @@ class CommentController extends Controller
     public function store(Request $request)
     {
 
-
-    
         $comment = new Comment();
 
         $request->validate([
@@ -71,8 +69,8 @@ class CommentController extends Controller
         }
         
 
-        return redirect()->back()
-        ->with('alert.success', "Comment ({$comment->id}) Created!");
+        return redirect()->back();
+        
         
     }
 
@@ -128,6 +126,6 @@ class CommentController extends Controller
         $comment->delete();
 
         return redirect()->back()
-        ->with('alert.success', "Post ({$comment->comment_body}) Deleted!");
+        ->with('alert.success', "Comment ({$comment->comment_body}) Deleted!");
     }
 }

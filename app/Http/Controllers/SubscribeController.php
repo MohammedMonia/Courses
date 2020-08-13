@@ -16,8 +16,20 @@ class SubscribeController extends Controller
     {
         $subscribes = Subscribe::all();
 
+       
+
         return view('admin.subscribe.subscribe', ['subscribes' => $subscribes]);
     }
+
+   /* public function index1()
+    {
+        
+        $subscribeslist = Subscribe::where('id', '<=', $correctedComparisons)->get();
+
+        $subscribesCount = $subscribeslist->count();
+
+        return view('admin.subscribe.subscribe', ['subscribesCount' => $subscribesCount]);
+    }*/
 
     /**
      * Show the form for creating a new resource.

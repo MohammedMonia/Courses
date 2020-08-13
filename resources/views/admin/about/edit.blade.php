@@ -46,7 +46,7 @@
 
 
         <div class="formgroup">
-            <button type="submit" class="btn btn-outline-primary">Edit Blog Post</button>
+            <button type="submit" class="btn btn-outline-primary">Edit About</button>
         </div>
 
     </form>

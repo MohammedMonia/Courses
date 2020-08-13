@@ -4,7 +4,7 @@
     <form action="{{ route('store_blogs_path') }}" method="POST" enctype="multipart/form-data" >
     @csrf
 
-        <h3 class="mt-2">Create blog post</h3>
+        <h3 class="mt-2">Create new course</h3>
         <div class="form-group">
             <label for="title">Title</label>
             <input type="text" name="title" class="form-control @error('title') is-invalid @enderror">
